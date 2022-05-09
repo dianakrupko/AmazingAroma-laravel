@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function (){
+    return view('about');
+});
+
+//Отримання даних з url-адрес
+Route::get('card/{id_card}',function ($id_card){
+    return "id: " . $id_card;
+});
