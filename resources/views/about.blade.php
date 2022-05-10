@@ -1,10 +1,8 @@
 @extends('layout')
-
 <link href="/css/about.css" rel="stylesheet">
 @section('title')
     About page
 @endsection
-
 @section('main_content')
     <main id="content">
         <div class="container">
