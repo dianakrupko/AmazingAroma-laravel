@@ -14,13 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+Route::get('/catalog',function (){
+    return view('catalog');
 });
 Route::get('/about', function (){
     return view('about');
 });
-
+Route::get('/favorite', function (){
+    return view('favorite');
+});
+Route::get('/basket', function (){
+    return view('basket');
+});
 //Отримання даних з url-адрес
 Route::get('card/{id_card}',function ($id_card){
     return "id: " . $id_card;
 });
+

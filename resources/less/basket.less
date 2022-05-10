@@ -1,0 +1,710 @@
+@color-brand1: #412F0E;
+@color-brand2: #B9AC92;
+@color-brand3: #968F82;
+
+
+@desktop: ~"(max-width: 1200px)";
+@desktop-area: 960px;
+
+@tablet: ~"(max-width: 992px)";
+@tablet-area: 720px;
+
+@small: ~"(max-width: 768px)";
+@small-area: 540px;
+
+@mobile: ~"(max-width: 576px)";
+@mobile-area: 320px;
+.back {
+  margin: 2vh 0;
+}
+
+.back a {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 27px;
+  color: @color-brand3;
+}
+
+.name-page {
+  margin: 3vh 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name-page hr {
+  border: none;
+  border-top: 3px solid @color-brand3;
+  width: 7vw;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 68px;
+  text-transform: uppercase;
+  margin: 0 2vw;
+}
+
+.product {
+  display: flex;
+  margin: 5% 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-photo {
+  width: 18%;
+}
+
+.product .description {
+  margin-left: 3%;
+  padding: 7% 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.product a {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  width: 40%;
+  text-transform: uppercase;
+}
+
+.product h4 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: @color-brand2;
+}
+
+.product button {
+  background: none;
+  border: 1px solid @color-brand3;
+  border-radius: 3px;
+  padding: 0 4%;
+  font-weight: 300;
+  font-size: 21px;
+  color: @color-brand3;
+}
+
+.number {
+  display: flex;
+  flex-direction: row;
+  width: 15%;
+}
+
+.number .square {
+  background: none;
+  padding: 3% 10%;
+  border: 1px solid #968F82;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 21.4214px;
+  line-height: 29px;
+  color: @color-brand3;
+}
+
+.number span {
+  margin: 3% 15%;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 29px;
+  color: @color-brand3;
+}
+
+.delete {
+  display: none;
+}
+
+.total-price-line {
+  display: flex;
+  justify-content: right;
+}
+
+.total-price hr {
+
+  border: none;
+  border-top: 1px solid @color-brand3;
+  //color: #333;
+  width: 30%;
+
+}
+
+.total-price-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 2%;
+}
+
+.total-price p {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 34px;
+  color: @color-brand3;
+}
+
+.total-price span {
+  margin-left: 1%;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: @color-brand2;
+}
+
+/*----Оформлення замовлення-------------------------------*/
+.ordering div {
+  margin: 2% 0;
+}
+
+.ordering-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordering h2 {
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 3vh;
+}
+
+.ordering p {
+  font-weight: 400;
+  font-size: 30px;
+  color: @color-brand3;
+  margin: 2% 0;
+}
+
+.ordering-button {
+  text-align: right;
+}
+
+.ordering-button button {
+  background: none;
+  border: 2px solid @color-brand1;
+  box-sizing: border-box;
+  border-radius: 7px;
+  padding: 1% 2%;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+.ordering input[type="text"], input[type="tel"] {
+  margin: 1% 0;
+  background: none;
+  border: 1px solid @color-brand3;
+  padding: 1%;
+  width: 42%;
+  font-weight: 400;
+  font-size: 20px;
+  color: @color-brand1;
+
+}
+
+::-webkit-input-placeholder {
+  color: @color-brand2;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.ordering input[name="number-department"] {
+  margin-left: 1%;
+}
+
+label {
+  cursor: pointer;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.ordering input[type="radio"] {
+  -webkit-appearance: none;
+  border: none;
+  width: 25px;
+  height: 25px;
+  background: url(../../public/img/basket/rectangle0.svg) left center no-repeat;
+  background-size: 15px;
+}
+
+.ordering input[type="radio"]:checked {
+  background: url(../../public/img/basket/rectangle.svg) left center no-repeat;
+}
+
+
+@media @desktop {
+  .back a {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  hr {
+    border-top: 2px solid @color-brand3;
+  }
+
+  h1 {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+
+  .product a {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .product h4 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  .product button {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .number .square {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .number span {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .total-price p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .total-price span {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  /*----Оформлення замовлення-------------------------------*/
+  .ordering h2 {
+    font-size: 25px;
+  }
+
+  .ordering p {
+    font-size: 23px;
+  }
+
+  .ordering-button button {
+    border: 1px solid @color-brand1;
+    font-size: 25px;
+  }
+
+  .ordering input[type="text"], input[type="tel"] {
+    font-size: 17px;
+
+  }
+
+  ::-webkit-input-placeholder {
+    color: @color-brand2;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .ordering input[name="number-department"] {
+    margin-left: 1%;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+  .ordering input[type="radio"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background: url(../../public/img/basket/rectangle0.svg) left center no-repeat;
+    background-size: 15px;
+  }
+
+  .ordering input[type="radio"]:checked {
+    background: url(../../public/img/basket/rectangle.svg) left center no-repeat;
+  }
+}
+
+@media @tablet {
+  .back a {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+
+  .product-photo {
+    width: 30%;
+  }
+
+  .product a {
+    font-size: 20px;
+    line-height: 25px;
+    width: 40%;
+  }
+
+  .product h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .product button {
+    background: none;
+    border: 0.5px solid @color-brand3;
+    border-radius: 1px;
+    padding: 0 4%;
+
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .number {
+    display: flex;
+    flex-direction: row;
+    width: 15%;
+  }
+
+  .number .square {
+    padding: 3% 10%;
+    border: 0.6px solid #968F82;
+    border-radius: 1px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .number span {
+    margin: 3% 15%;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 20px;
+    color: @color-brand3;
+  }
+
+  .total-price hr {
+    border-top: 0.3px solid @color-brand3;
+  }
+
+  .total-price p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .total-price span {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  /*----Оформлення замовлення*/
+  .ordering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 7%;
+  }
+
+  .ordering h2 {
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 3%;
+  }
+
+  .ordering p {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 2% 0;
+  }
+
+  .ordering-button {
+    text-align: right;
+  }
+
+
+  .ordering input[type="text"], input[type="tel"] {
+    margin: 1% 0;
+    border: 0.4px solid @color-brand3;
+    padding: 1%;
+    font-size: 15px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .ordering input[type="radio"] {
+    -webkit-appearance: none;
+    border: none;
+    width: 15px;
+    height: 15px;
+    background: url(../../public/img/basket/rectangle0-mobile.svg) left center no-repeat;
+    background-size: 15px;
+  }
+
+  .ordering input[type="radio"]:checked {
+    background: url(../../public/img/basket/rectangle-mobile.svg) left center no-repeat;
+    background-size: 15px;
+  }
+
+  .payment, .delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .city-department {
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+  }
+
+  .ordering input[name="city"], .ordering input[name="number-department"] {
+    margin-left: 0;
+    width: 100%;
+    padding: 1%;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .ordering-button {
+    text-align: center;
+  }
+
+  .ordering-button button {
+    margin: 3vh 0;
+    border: 1px solid @color-brand1;
+    box-sizing: border-box;
+    border-radius: 2.5px;
+    padding: 1% 2%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+
+@media @small {
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+
+  .product-photo {
+    width: 25%;
+  }
+
+  .product a {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .product h4 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .product button {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .number .square {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .number span {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .remove {
+    display: none;
+  }
+
+  .delete {
+    display: flex;
+  }
+
+  .total-price hr{
+    border: none;
+    height: 1px;
+    background: @color-brand3;
+  }
+  .total-price p {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .total-price span {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  /*----Оформлення замовлення*/
+  .ordering h2 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .ordering p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .ordering input[type="text"], input[type="tel"] {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .ordering input[type="radio"] {
+    width: 13px;
+    height: 13px;
+    background-size: 13px;
+  }
+
+  .ordering input[type="radio"]:checked {
+    background-size: 15px;
+  }
+
+  .ordering input[name="city"], .ordering input[name="number-department"] {
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .ordering-button button {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media @mobile {
+  .back a {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .name-page hr {
+    border-top: 1px solid @color-brand3;
+  }
+
+  .name-page h1 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .product a {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .product h4 {
+    font-size: 8px;
+    line-height: 12px;
+  }
+
+  .product button {
+    font-size: 6px;
+    line-height: 8px;
+  }
+
+  .number .square {
+    font-size: 6px;
+    line-height: 8px;
+  }
+
+  .number span {
+    font-size: 6px;
+    line-height: 8px;
+    color: @color-brand3;
+  }
+
+  .total-price hr {
+height: 0.2px;
+  }
+
+  .total-price p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .total-price span {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  /*----Оформлення замовлення*/
+  .ordering h2 {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .ordering p {
+    font-size: 11px;
+    line-height: 16px;
+  }
+
+  .ordering-button button {
+    font-size: 35px;
+  }
+
+  .ordering input[type="text"], input[type="tel"] {
+    font-size: 10px;
+  }
+
+  ::-webkit-input-placeholder {
+    font-size: 7px;
+    line-height: 11px;
+  }
+
+  .ordering input[type="radio"] {
+    background-size: 9px;
+  }
+
+  .ordering input[type="radio"]:checked {
+    background-size: 10px;
+  }
+
+  .ordering input[name="city"], .ordering input[name="number-department"] {
+    font-size: 10px;
+  }
+
+  .ordering-button button {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

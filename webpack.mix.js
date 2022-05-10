@@ -11,7 +11,19 @@ const mix = require('laravel-mix');
  |
  */
 
+
 mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
+    .js('resources/js/menu.js', 'public/js')
+    // .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    // ])
+    .less('resources/less/general.less', 'public/css')
+    .less('resources/less/index.less', 'public/css')
+    .less('resources/less/about.less','public/css')
+    .less('resources/less/catalog.less','public/css')
+    .less('resources/less/favorite.less','public/css')
+    .less('resources/less/basket.less','public/css')
+    .less('resources/less/card.less','public/css')
+
+
+// mix.styles('resources/less/id.css', 'public/less/id.css')
