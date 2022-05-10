@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,23 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-Route::get('/catalog',function (){
-    return view('catalog');
-});
-Route::get('/about', function (){
-    return view('about');
-});
-Route::get('/favorite', function (){
-    return view('favorite');
-});
-Route::get('/basket', function (){
-    return view('basket');
-});
+Route::get('/', [MainController::class,'home']);
+Route::get('/catalog',[MainController::class,'catalog']);
+Route::get('/about', [MainController::class,'about']);;
+Route::get('/favorite',[MainController::class,'favorite']);
+Route::get('/basket', [MainController::class,'basket']);
+
+//дані з форми
+Route::post('/home/check_consultation', [MainController::class,'check_consultation']);
+
 //Отримання даних з url-адрес
-Route::get('card/{id_card}',function ($id_card){
-    return "id: " . $id_card;
-});
+//Route::get('card/{id_card}',function ($id_card){
+//    return "id: " . $id_card;
+//});
 

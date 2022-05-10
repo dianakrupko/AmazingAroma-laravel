@@ -99,12 +99,23 @@
                 </div>
             </div>
             <div class="online-consultation">
-                <form class="box" action="#" method="post">
+                @if($errors->any())
+                    <div class="">
+                        <ul>
+                            @foreach($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                <form class="box" action="home/check_consultation" method="post">
+                    @csrf
                     <h1>Онлайн-консультація з парфумером</h1>
                     <div class="answer">
-                        <label><input type="tel" name="phone"
+                        <label><input type="tel" name="phone" id="phone"
                                       placeholder="Залиште тут номер телефону..."></label>
-                        <button class="call">
+                        <button type="submit" class="call">
                             <i class="icon-call"></i>
                         </button>
                     </div>
