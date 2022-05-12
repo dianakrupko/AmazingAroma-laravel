@@ -100,15 +100,12 @@
             </div>
             <div class="online-consultation">
                 @if($errors->any())
-                    <div class="">
-                        <ul>
+                    <div class="box-error">
                             @foreach($errors->all() as $error)
-                                <li>{{ $error }}</li>
+                                <p class="text-error">{{ $error }}</p>
                             @endforeach
-                        </ul>
                     </div>
                 @endif
-
                 <form class="box" action="home/check_consultation" method="post">
                     @csrf
                     <h1>Онлайн-консультація з парфумером</h1>

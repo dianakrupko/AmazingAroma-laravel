@@ -16,7 +16,7 @@
 <header>
     <div class="header-container container">
         <div class="component-left">
-            <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+            <a href="index.html"><img src="/img/logo.svg" alt="logo"></a>
             <nav class="header-menu menu">
 
                 <ul class="menu-list">

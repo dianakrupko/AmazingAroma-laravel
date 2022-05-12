@@ -31,12 +31,20 @@ class MainController extends Controller
         return view('basket');
     }
 
+    public function form(){
+        return view('form_consultation');
+    }
+
     public function check_consultation(Request $request)
     {
         $valid=$request->validate([
-            'phone'=>'required|size:13'
+            'phone'=>'required|size:10'
         ]);
         dd($valid);
+    }
+
+    public function card($id_card){
+        return "id: " . $id_card;
     }
 
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,10 +22,9 @@ Route::get('/favorite',[MainController::class,'favorite']);
 Route::get('/basket', [MainController::class,'basket']);
 
 //дані з форми
+Route::get('/form',[MainController::class,'form']);
 Route::post('/home/check_consultation', [MainController::class,'check_consultation']);
-
 //Отримання даних з url-адрес
-//Route::get('card/{id_card}',function ($id_card){
-//    return "id: " . $id_card;
-//});
-
+Route::get('card/{id_card}',[MainController::class,'card']);
+Route::get('product/{id}',[ProductController::class,'info_product']);
+Route::get('product',[ProductController::class,'getProductjson']);
