@@ -2,13 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
+use App\Models\Photo;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
     public function home()
     {
-        return view('home');
+        $u=User::all();
+        return view('home',['users'=>$u]);
     }
 
     public function catalog()

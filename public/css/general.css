@@ -184,6 +184,9 @@ header .component-right {
   flex-direction: row;
   align-items: center;
 }
+header .person{
+    width: 43px;
+}
 header .like-basket i {
   margin-left: 0.5vw;
 }

@@ -13,7 +13,7 @@
                     <div class="text-info">
                         <h1>Amazing Aroma</h1>
                         <span>Знайди своє натхнення у флаконі з улюбленим ароматом</span>
-                        <button><a href="catalog.html">Перейти до каталогу</a></button>
+                        <button><a href="{{ route('catalog') }}">Перейти до каталогу</a></button>
                         <div class="photo2"><img class="image" src="img/index/photo2.png" alt="photo2"></div>
                     </div>
                     <div class="photo1"><img class="image" src="img/index/photo1.png" alt="photo1"></div>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="go-to-catalog">
                     <div class="go-to-catalog-line">
-                        <a href="catalog.html">Перейти до каталогу</a>
+                        <a href="catalog">Перейти до каталогу</a>
                         <hr>
                     </div>
                 </div>
@@ -72,7 +72,6 @@
                         <span>Хочете подарувати парфуми близькій людині, але не знаєте який аромат обрати?</span>
                         <span>Ми допоможемо вирішити вашу проблему - чудовим варіантом буде придбання “Подарункового сертифікату” на будь-яку суму.</span>
                     </div>
-
 
                 </div>
                 <div class="more-info">
@@ -93,7 +92,7 @@
                 </div>
                 <div class="go-to-certificate">
                     <div class="go-to-certificate-line">
-                        <a href="catalog.html">Придбати сертифікат</a>
+                        <a href="{{ route('catalog') }}">{{ __('Придбати сертифікат') }}</a>
                         <hr>
                     </div>
                 </div>
@@ -101,9 +100,9 @@
             <div class="online-consultation">
                 @if($errors->any())
                     <div class="box-error">
-                            @foreach($errors->all() as $error)
-                                <p class="text-error">{{ $error }}</p>
-                            @endforeach
+                        @foreach($errors->all() as $error)
+                            <p class="text-error">{{ $error }}</p>
+                        @endforeach
                     </div>
                 @endif
                 <form class="box" action="home/check_consultation" method="post">

@@ -4,7 +4,7 @@
     Product page
 @endsection
 @section('main_content')
-    @if(!$obj)
+    @if($obj)
         <main>
             <div class="container">
                 <div class="back">

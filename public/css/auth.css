@@ -1,0 +1,42 @@
+body{
+    font-size: 30px;
+    line-height: 50px;
+}
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+}
+a:active{
+    color: #B9AC92;
+
+}
+h2{
+    padding: 7% 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+}
+.box{
+    padding-top: 10%;
+}
+span{
+    color: #B9AC92;
+}
+.go-orders{
+    padding: 5% 0;
+}
+.go-orders a{
+    color: #968f82;
+}
+hr{
+    width: 40%;
+    border: 1px solid #968f82;
+}
+
+
+

@@ -16,18 +16,18 @@
 <header>
     <div class="header-container container">
         <div class="component-left">
-            <a href="index.html"><img src="/img/logo.svg" alt="logo"></a>
+            <a href="{{route('home')}}"><img src="/img/logo.svg" alt="logo"></a>
             <nav class="header-menu menu">
 
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="index.html" class="menu-link">Головна</a>
+                        <a href="{{route('home')}}" class="menu-link">Головна</a>
                     </li>
                     <li class="menu-item">
-                        <a href="catalog.html" class="menu-link">Каталог</a>
+                        <a href="{{route('catalog')}}" class="menu-link">Каталог</a>
                     </li>
                     <li class="menu-item">
-                        <a href="about.html" class="menu-link">Про нас</a>
+                        <a href="{{route('about')}}" class="menu-link">Про нас</a>
                     </li>
                 </ul>
             </nav>
@@ -36,8 +36,9 @@
 
             <div><a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a></div>
             <div class="like-basket">
-                <div><a href="favorite.html"><i class="icon-like"></i></a></div>
-                <div><a href="basket.html"><i class="icon-basket"></i></a></div>
+                <div><a href={{route('favorite')}}><i class="icon-like"></i></a></div>
+                <div><a href="{{route('basket')}}"><i class="icon-basket"></i></a></div>
+                <div><a href={{ route('auth',1) }}><img class="person" src="img/icons_person.svg"></a></div>
                 <div id="sidebar" class="func">
                     <div class="toggle-btn" onclick="openMenu()">
                         <i class="icon-menu"></i>
@@ -50,11 +51,11 @@
                         <ul>
                             <li>Меню сайту</li>
                             <hr>
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="catalog.html">Каталог</a></li>
-                            <li><a href="about.html">Про нас</a></li>
-                            <li><a href="basket.html">Корзина</a></li>
-                            <li><a href="favorite.html">Вподобані</a></li>
+                            <li><a href="{{route('home')}}">Головна</a></li>
+                            <li><a href="{{route('catalog')}}l">Каталог</a></li>
+                            <li><a href="{{route('about')}}">Про нас</a></li>
+                            <li><a href="{{route('basket')}}">Корзина</a></li>
+                            <li><a href="{{route('favorite')}}">Вподобані</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,13 +74,13 @@
         <div>
             <div class="footer-info row">
                 <nav class="col-3 col-sm-2">
-                    <a href="index.html">Головна</a>
-                    <a href="catalog.html">Каталог</a>
-                    <a href="about.html">Про нас</a>
+                    <a href="{{route('home')}}">Головна</a>
+                    <a href="{{route('catalog')}}l">Каталог</a>
+                    <a href="{{route('about')}}">Про нас</a>
                 </nav>
                 <div class="like-cart col-3 col-sm-2">
-                    <a href="favorite.html">Вподобані</a>
-                    <a href="basket.html">Корзина</a>
+                    <a href="{{route('favorite')}}">Вподобані</a>
+                    <a href="{{route('basket')}}">Корзина</a>
                 </div>
                 <div class="data col-6 col-sm-4">
                     <a href="mailto:amazin.aroma@gmail.com">amazin.aroma@gmail.com</a>

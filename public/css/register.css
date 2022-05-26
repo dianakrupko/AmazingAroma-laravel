@@ -1,0 +1,81 @@
+body{
+    font-size: 30px;
+    line-height: 50px;
+}
+body::before {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+a:active{
+    color: #B9AC92;
+
+}
+.box-form{
+    border: 2px solid #412f0e;
+    border-radius: 7px;
+    margin: 10% 15%;
+    padding: 0 10%;
+    background: #D9D9D9;
+
+}
+h2{
+    padding: 7% 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 45px;
+}
+.box{
+    padding-top: 10%;
+}
+.param{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+}
+
+strong{
+    font-weight: 200;
+    font-size: 15px;
+    color: #dc3545;
+}
+
+.form-check-label{
+    font-size: 20px;
+    color: #B9AC92;
+}
+.forgot-password{
+    font-size: 20px;
+    color: #B9AC92;
+}
+.button{
+    text-align: center;
+    padding: 5% 0;
+}
+.button-register{
+    font-size: 30px;
+    border: 2px solid #412f0e;
+    border-radius: 10px;
+    padding: 2% 7%;
+}
+
+span{
+    color: #B9AC92;
+}
+.go-orders{
+    padding: 5% 0;
+}
+.go-orders a{
+    color: #968f82;
+}
+hr{
+    width: 40%;
+    border: 1px solid #968f82;
+}
+
+
+
