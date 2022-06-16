@@ -1,0 +1,319 @@
+.back {
+    margin: 2vh 0;
+}
+.back a {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    color: #968F82;
+}
+.name-page {
+    margin: 3vh 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+hr {
+    border: none;
+    border-top: 3px solid #968F82;
+    width: 7vw;
+}
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    text-transform: uppercase;
+    margin: 0 2vw;
+}
+
+.certificate {
+    margin-bottom: 10%;
+}
+.certificate-row1 {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+    width: 100%;
+}
+.certificate-row2 {
+    display: flex;
+    margin: 3% 0;
+    width: 100%;
+}
+
+.certificate span {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 41px;
+    color: #000000;
+    padding: 1.5% 0;
+}
+.certificate-info {
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding-left: 0;
+}
+.offer{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.list {
+    list-style-type: square;
+    padding-left: 2.5%;
+    width: 100%;
+}
+.list li {
+    color: #968F82;
+    font-size: 35px;
+}
+.go-to-certificate a {
+    font-weight: 500;
+    font-size: 35px;
+    margin: 0 1%;
+}
+.go-to-certificate hr {
+    margin-top: 1%;
+    border: none;
+    border-top: 3px solid #B9AC92;
+    width: 34%;
+    text-align: center;
+}
+
+.products {
+    margin-bottom: 10vh;
+}
+.product {
+    display: flex;
+    flex-direction: row;
+    margin: 4vh 0;
+}
+.product-photo {
+    width: 25%;
+}
+.product-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 2%;
+    flex-wrap: wrap;
+}
+.name-product {
+    width: 35%;
+}
+.product-information a {
+    display: block;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+.product-information p {
+    width: 11%;
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #B9AC92;
+}
+.product-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 40%;
+}
+.product button {
+    margin-left: 2%;
+    padding: 0.5vh 3vw;
+    background: none;
+    border: 1px solid #968F82;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 29px;
+    width: 100%;
+    color: #968F82;
+}
+@media (max-width: 1200px) {
+    .back a {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    hr {
+        border-top: 2px solid #968F82;
+    }
+    h1 {
+        font-size: 45px;
+        line-height: 60px;
+    }
+    .certificate span {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .list li {
+        font-size: 25px;
+    }
+    .go-to-certificate a {
+        font-size: 30px;
+    }
+    .product-information a {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .product-information p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .product button {
+        font-size: 17px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 992px) {
+    .back a {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 55px;
+    }
+    .certificate span {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .list li {
+        font-size: 20px;
+    }
+    .go-to-certificate a {
+        font-size: 25px;
+    }
+    .go-to-certificate hr {
+        width: 40%;
+        border-top: 1px solid #B9AC92;
+    }
+    .product-photo {
+        width: 50%;
+    }
+    .product-information {
+        align-items: flex-start;
+        padding: 4% 0;
+    }
+    .name-product {
+        width: 100%;
+    }
+    .product-information a {
+        width: 100%;
+    }
+    .product-information p {
+        width: 100%;
+    }
+    .product-button {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+    }
+    .product button {
+        margin-left: 0;
+        margin-right: 2%;
+        padding: 0.3vh 4vw;
+        background: none;
+        border: 0.5px solid #968F82;
+        box-sizing: border-box;
+        border-radius: 1.5px;
+    }
+}
+@media (max-width: 768px) {
+    .name-page hr {
+        border-top: 1px solid #968F82;
+    }
+    .certificate-row1 {
+        display: flex;
+        flex-direction: column;
+        margin: 3% 0;
+        width: 100%;
+    }
+
+    .certificate-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+        margin: 4% 0;
+    }
+    .certificate span {
+        font-size: 19px;
+        line-height: 24px;
+        padding: 0;
+        margin: 0;
+    }
+    /*.certificate .more-info {*/
+    /*    display: flex;*/
+    /*    flex-direction: column;*/
+    /*    margin-top: 1%;*/
+    /*    font-size: 19px;*/
+    /*    line-height: 24px;*/
+    /*}*/
+    /*.more-info hr {*/
+    /*    width: 33%;*/
+    /*    border-top: 1px solid #B9AC92;*/
+    /*}*/
+
+    .product-information a {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .product-information p {
+        font-size: 17px;
+        line-height: 20px;
+    }
+    .product button {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 576px) {
+    .back a {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .name-page hr {
+        border-top: 1px solid #968F82;
+    }
+    .name-page h1 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .certificate span {
+        font-size: 11px;
+        line-height: 15px;
+        padding-left: 2%;
+    }
+    .go-to-certificate {
+        display: flex;
+        justify-content: center;
+    }
+    .certificate .more-info {
+        font-size: 11px;
+        line-height: 15px;
+    }
+    .product-information a {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .product-information p {
+        font-size: 11px;
+        line-height: 16px;
+    }
+    .product button {
+        font-size: 8px;
+        line-height: 12px;
+    }
+}
+

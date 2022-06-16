@@ -1,6 +1,9 @@
 .back {
   margin: 2vh 0;
 }
+.back button{
+    background: none;
+}
 .back a {
   font-weight: 300;
   font-size: 20px;

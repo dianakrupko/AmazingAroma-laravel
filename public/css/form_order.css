@@ -1,0 +1,52 @@
+
+.accordion {
+    background:none;
+    position: relative;
+}
+.accordion__input {
+    -webkit-appearance: none;
+    border: none;
+    height: auto;
+    /*padding: 20px 0;*/
+    /*background: url(/img/basket/rectangle0.svg) left center no-repeat;*/
+    /*background-size: 15px;*/
+}
+.accordion__input:checked + .accordion__item {
+    height: auto;
+    display: block;
+    opacity: 1;
+}
+.accordion__input#department:checked ~ .accordion__button#department-button, .accordion__input#courier:checked ~ .accordion__button#courier-button{
+    -webkit-appearance: none;
+    /*background-size: 15px;*/
+}
+.accordion__button {
+    background: none;
+    width: 25.5vw;
+    display: inline-block;
+    /*padding: 20px;*/
+    text-decoration: none;
+    text-align: left;
+    /*border-top: 3px solid transparent;*/
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
+    /*opacity: 0.6;*/
+    font-weight: 400;
+    font-size: 30px;
+    color: #968F82;
+    margin: 1vh 0;
+}
+
+.accordion__item {
+    /*line-height: 1.5;*/
+    position: absolute;
+    top: 3vh;
+    width: 100%;
+    background: #ECECEC;
+    opacity: 0;
+}
+.payment{
+    transform: translateY(500px);
+    background: #0dcaf0;
+    display: block;
+}

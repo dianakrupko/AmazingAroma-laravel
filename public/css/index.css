@@ -37,6 +37,79 @@
   line-height: 41px;
   z-index: 60;
 }
+
+
+
+.catalog-go {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
+}
+@media (min-width: 600px) {
+    .catalog-go {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.btn {
+    color: #412f0e;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 70px;
+    /*margin: 0 0 2em;*/
+    max-width: 350px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+    transform: translateX(-2.8vw);
+
+
+}
+@media (min-width: 600px) {
+    .btn {
+        margin: 0 1em 2em;
+    }
+}
+.btn:hover {
+    text-decoration: none;
+}
+.btn-1 {
+    background: #ECECEC;
+    font-weight: 400;
+}
+.btn-1 svg {
+    height: 70px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+}
+.btn-1 rect {
+
+    fill: none;
+    stroke: #412f0e;
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
+    transition: all 0.6s linear;
+}
+.btn-1:hover {
+    background: rgba(225, 51, 45, 0);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
 .photo1 {
   width: 40%;
   z-index: 20;
@@ -44,7 +117,7 @@
 .photo2 {
   position: relative;
   width: 60%;
-  top: -5%;
+  top: -13%;
   left: 60%;
   z-index: 30;
 }
@@ -81,7 +154,7 @@
   justify-content: center;
 }
 .go-to-catalog-line {
-  width: 37%;
+  width: 370px;
   display: inline-block;
   justify-content: center;
   text-align: center;
@@ -94,12 +167,12 @@
 .go-to-catalog hr {
   margin-top: 1%;
   border: none;
-  border-top: 3px solid #B9AC92;
+  border-top: 2px solid #B9AC92;
   width: 100%;
 }
 /*----Сертифікати--------------------------*/
 .certificate {
-  margin-bottom: 10%;
+  margin: 10% 0;
 }
 .certificate-row1 {
   display: flex;
@@ -149,23 +222,23 @@
 .go-to-certificate hr {
   margin-top: 1%;
   border: none;
-  border-top: 3px solid #B9AC92;
-  width: 34%;
+  border-top: 2px solid #B9AC92;
+  width: 390px;
   text-align: center;
 }
 /*----Онлайн-консультація-----------------------*/
 .online-consultation {
   display: flex;
   justify-content: center;
-  margin-bottom: 10%;
+  margin: 20vh 0;
   text-align: center;
 }
 .box {
   background: #D9D9D9;
   border: 2px solid #968F82;
   box-sizing: border-box;
-  border-radius: 10px;
-  padding: 2% 3%;
+  border-radius: 5px;
+  padding: 4vh 2vw;
 }
 .box h1 {
   font-weight: 600;
@@ -187,7 +260,7 @@
   border-radius: 0;
   transition: 0.25s;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 27px;
   color: #412F0E;
 }

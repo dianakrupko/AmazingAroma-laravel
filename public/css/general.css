@@ -43,6 +43,7 @@ input::-ms-clear {
 }
 button {
   cursor: pointer;
+    border: none;
 }
 button::-moz-focus-inner {
   padding: 0;
@@ -58,15 +59,15 @@ a:hover {
 img {
   vertical-align: top;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
+/*h1,*/
+/*h2,*/
+/*h3,*/
+/*h4,*/
+/*h5,*/
+/*h6 {*/
+/*  font-size: inherit;*/
+/*  font-weight: 400;*/
+/*}*/
 select {
   font: inherit;
   letter-spacing: inherit;
@@ -126,6 +127,9 @@ body {
 .image {
   width: 100%;
 }
+.back button{
+    background: none;
+}
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -183,6 +187,9 @@ header .component-right {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+header .person{
+    width: 43px;
 }
 header .like-basket i {
   margin-left: 0.5vw;

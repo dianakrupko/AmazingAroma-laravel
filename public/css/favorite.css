@@ -47,7 +47,7 @@ h1 {
   flex-wrap: wrap;
 }
 .name-product {
-  width: 35%;
+  width: 33%;
 }
 .product-information a {
   display: block;
@@ -67,20 +67,21 @@ h1 {
 .product-button {
   display: flex;
   flex-direction: row;
-  justify-content: right;
-  width: 48%;
+  justify-content: space-between;
+  width: 45%;
 }
 .product button {
   margin-left: 2%;
-  padding: 0.5vh 3vw;
+  padding: 1vh 3vw;
   background: none;
   border: 1px solid #968F82;
   box-sizing: border-box;
   border-radius: 3px;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 20px;
   line-height: 29px;
   color: #968F82;
+    width: 100%;
 }
 @media (max-width: 1200px) {
   .back a {

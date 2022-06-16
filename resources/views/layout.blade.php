@@ -1,60 +1,76 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{{--    <script src="../../public/js/menu.js"></script>--}}
+
+    <script defer src="/js/chief-slider.min.js"></script>
     <link href="/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="/css/icons.css" rel="stylesheet">
     <link href="/css/general.css" rel="stylesheet">
-    <script src="/js/menu.js"></script>
+    <link rel="stylesheet" href="/css/chief-slider.min.css">
     <title> @yield ('title') </title>
 </head>
 <body>
 <header>
     <div class="header-container container">
         <div class="component-left">
-            <a href="index.html"><img src="/img/logo.svg" alt="logo"></a>
+            <a href="{{route('home')}}"><img src="/img/logo.svg" alt="logo"></a>
             <nav class="header-menu menu">
-
                 <ul class="menu-list">
                     <li class="menu-item">
-                        <a href="index.html" class="menu-link">Головна</a>
+                        <a href="{{route('home')}}" class="menu-link">Головна</a>
                     </li>
                     <li class="menu-item">
-                        <a href="catalog.html" class="menu-link">Каталог</a>
+                        <a href="{{route('catalog',$count=9)}}" class="menu-link">Каталог</a>
                     </li>
                     <li class="menu-item">
-                        <a href="about.html" class="menu-link">Про нас</a>
+                        <a href="{{route('about')}}" class="menu-link">Про нас</a>
                     </li>
                 </ul>
             </nav>
         </div>
         <div class="component-right">
-
             <div><a class="number-phone" href="tel:+380 97 133 76 71">+380 97 133 76 71</a></div>
             <div class="like-basket">
-                <div><a href="favorite.html"><i class="icon-like"></i></a></div>
-                <div><a href="basket.html"><i class="icon-basket"></i></a></div>
+                <div><a href={{route('favorite')}}><i class="icon-like"></i></a></div>
+                <div><a href="{{route('basket')}}"><i class="icon-basket"></i></a></div>
+                @guest
+                    <div><a href={{ route('auth') }}><img class="person" src="/img/login-line.svg"></a></div>
+                @else
+                    <div><a href={{ route('auth') }}><img class="person" src="/img/icons_person.svg"></a></div>
+{{--                    <a class="dropdown-item" href="{{ route('logout') }}"--}}
+{{--                       onclick="event.preventDefault();--}}
+{{--                                                     document.getElementById('logout-form').submit();">--}}
+{{--                        --}}{{--                                        {{ __('Вихід') }}--}}
+{{--                        <img src="/img/logout-line.svg" alt="">--}}
+{{--                    </a>--}}
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @endguest
                 <div id="sidebar" class="func">
                     <div class="toggle-btn" onclick="openMenu()">
                         <i class="icon-menu"></i>
                     </div>
                     <div class="box-menu">
                         <div class="name-menu">
-                            <img class="close" onclick="closeMenu()" src="img/index/close.svg" alt="close">
+                            <img class="close" onclick="closeMenu()" src="/img/close.svg" alt="close">
                         </div>
 
                         <ul>
                             <li>Меню сайту</li>
                             <hr>
-                            <li><a href="index.html">Головна</a></li>
-                            <li><a href="catalog.html">Каталог</a></li>
-                            <li><a href="about.html">Про нас</a></li>
-                            <li><a href="basket.html">Корзина</a></li>
-                            <li><a href="favorite.html">Вподобані</a></li>
+                            <li><a href="{{route('home')}}">Головна</a></li>
+                            <li><a href="{{route('catalog',$count-1)}}">Каталог</a></li>
+                            <li><a href="{{route('about')}}">Про нас</a></li>
+                            <li><a href="{{route('basket')}}">Корзина</a></li>
+                            <li><a href="{{route('favorite')}}">Вподобані</a></li>
                         </ul>
                     </div>
                 </div>
@@ -73,13 +89,14 @@
         <div>
             <div class="footer-info row">
                 <nav class="col-3 col-sm-2">
-                    <a href="index.html">Головна</a>
-                    <a href="catalog.html">Каталог</a>
-                    <a href="about.html">Про нас</a>
+                    <a href="{{route('home')}}">Головна</a>
+                    <a href="{{route('catalog',$count)}}">Каталог</a>
+                    <a href="{{route('about')}}">Про нас</a>
                 </nav>
                 <div class="like-cart col-3 col-sm-2">
-                    <a href="favorite.html">Вподобані</a>
-                    <a href="basket.html">Корзина</a>
+                    <a href="{{route('favorite')}}">Вподобані</a>
+                    <a href="{{route('basket')}}">Корзина</a>
+                    <a href="{{route('certificate')}}">Сертифікати</a>
                 </div>
                 <div class="data col-6 col-sm-4">
                     <a href="mailto:amazin.aroma@gmail.com">amazin.aroma@gmail.com</a>
@@ -102,5 +119,14 @@
         </div>
     </div>
 </footer>
+<script>
+    function openMenu() {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+
+    function closeMenu() {
+        document.getElementById("sidebar").classList.toggle('active');
+    }
+</script>
 </body>
 </html>

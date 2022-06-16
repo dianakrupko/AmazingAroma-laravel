@@ -7,7 +7,7 @@
     <main id="content">
         <div class="container">
             <div class="back">
-                <a href="#"><i class="icon-arrow-left"></i>Назад</a>
+                <button onclick="history.back()"><a href="#"><i class="icon-arrow-left"></i>Назад</a></button>
             </div>
             <div class="name-page">
                 <hr>
