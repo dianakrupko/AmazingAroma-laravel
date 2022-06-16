@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 a:active{
     color: #B9AC92;
@@ -15,6 +16,34 @@ a:hover{
 
 }
 h3{
+=======
+body{
+    font-size: 30px;
+    line-height: 50px;
+}
+body::before {
+    font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+    "Droid Sans Mono", monospace, monospace;
+    white-space: pre;
+    display: block;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid black;
+}
+a:active{
+    color: #B9AC92;
+
+}
+.box-form{
+    border: 2px solid #412f0e;
+    border-radius: 7px;
+    margin: 10% 15%;
+    padding: 0 10%;
+    background: #D9D9D9;
+
+}
+h2{
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     padding: 7% 0;
     text-align: center;
     font-weight: 700;
@@ -26,6 +55,7 @@ h3{
 .param{
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     font-size: 25px;
     margin: 2vh 0;
 }
@@ -39,6 +69,11 @@ input:hover{
     border: 1px solid #412f0e;
     transition: 50ms;
 }
+=======
+    font-size: 30px;
+}
+
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 strong{
     font-weight: 200;
     font-size: 15px;
@@ -46,6 +81,7 @@ strong{
 }
 
 .form-check-label{
+<<<<<<< HEAD
     font-weight: 300;
     font-size: 20px;
     color: #968f82;
@@ -59,6 +95,14 @@ input[type="checkbox"]{
     font-size: 20px;
     margin-right: 2vw;
     color: #968f82;
+=======
+    font-size: 20px;
+    color: #B9AC92;
+}
+.forgot-password{
+    font-size: 20px;
+    color: #B9AC92;
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 }
 .button{
     text-align: center;
@@ -71,10 +115,25 @@ input[type="checkbox"]{
     padding: 2% 7%;
 }
 
+<<<<<<< HEAD
 .reg-pas{
     display: flex;
     justify-content: center;
     /*text-align: center;*/
+=======
+span{
+    color: #B9AC92;
+}
+.go-orders{
+    padding: 5% 0;
+}
+.go-orders a{
+    color: #968f82;
+}
+hr{
+    width: 40%;
+    border: 1px solid #968f82;
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 }
 
 

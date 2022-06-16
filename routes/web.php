@@ -1,8 +1,11 @@
 <?php
 
+<<<<<<< HEAD
 use App\Http\Controllers\BasketController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\FavoriteController;
+=======
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\OrderController;
@@ -52,4 +55,38 @@ Route::post('/order/{id}',[BasketController::class,'check_order'])->name('orderD
 
 
 
+<<<<<<< HEAD
 
+=======
+Route::get('/', [MainController::class,'home'])->name('home');
+Route::get('/catalog',[MainController::class,'catalog'])->name('catalog');
+Route::get('/about', [MainController::class,'about'])->name('about');
+Route::get('/favorite',[MainController::class,'favorite'])->name('favorite');
+Route::get('/basket', [MainController::class,'basket'])->name('basket');
+
+//дані з форми
+Route::get('/form',[MainController::class,'form']);
+Route::post('/home/check_consultation', [MainController::class,'check_consultation']);
+//Отримання даних з url-адрес
+//Route::get('card/{id_card}',[MainController::class,'card']);
+Route::get('product/{id}',[ProductController::class,'info_product']);
+Route::get('product',[ProductController::class,'getProductjson']);
+
+Auth::routes();
+
+//Route::get('/log',[HomeController::class, 'log'])->name('log');
+Route::get('/user/{id}', [HomeController::class, 'index'])->name('auth');
+
+
+
+Route::get('/photos',[PhotoController::class,'getAllPhotos']);
+
+Route::get('card/{id}',[ProductController::class,'getData'])->name('product');
+Route::get('card/{id}/orders',[ProductController::class,'getOrders'])->name('exampleOrders');
+
+Route::get('/userOrders/{id}',[UserController::class,'getOrders']);
+Route::get('/user/{id}/orders',[UserController::class,'getData'])->name('myOrders');
+
+Route::get('orders/{id}',[OrderController::class,'getProducts'])->name('orderDetail');
+Route::get('/productOrder/{id}',[ProductController::class,'getOrders']);
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5

@@ -26,7 +26,11 @@
                         <a href="{{route('home')}}" class="menu-link">Головна</a>
                     </li>
                     <li class="menu-item">
+<<<<<<< HEAD
                         <a href="{{route('catalog',$count=9)}}" class="menu-link">Каталог</a>
+=======
+                        <a href="{{route('catalog')}}" class="menu-link">Каталог</a>
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
                     </li>
                     <li class="menu-item">
                         <a href="{{route('about')}}" class="menu-link">Про нас</a>
@@ -39,6 +43,7 @@
             <div class="like-basket">
                 <div><a href={{route('favorite')}}><i class="icon-like"></i></a></div>
                 <div><a href="{{route('basket')}}"><i class="icon-basket"></i></a></div>
+<<<<<<< HEAD
                 @guest
                     <div><a href={{ route('auth') }}><img class="person" src="/img/login-line.svg"></a></div>
                 @else
@@ -54,6 +59,9 @@
                         @csrf
                     </form>
                 @endguest
+=======
+                <div><a href={{ route('auth',1) }}><img class="person" src="img/icons_person.svg"></a></div>
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
                 <div id="sidebar" class="func">
                     <div class="toggle-btn" onclick="openMenu()">
                         <i class="icon-menu"></i>
@@ -67,7 +75,11 @@
                             <li>Меню сайту</li>
                             <hr>
                             <li><a href="{{route('home')}}">Головна</a></li>
+<<<<<<< HEAD
                             <li><a href="{{route('catalog',$count-1)}}">Каталог</a></li>
+=======
+                            <li><a href="{{route('catalog')}}l">Каталог</a></li>
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
                             <li><a href="{{route('about')}}">Про нас</a></li>
                             <li><a href="{{route('basket')}}">Корзина</a></li>
                             <li><a href="{{route('favorite')}}">Вподобані</a></li>
@@ -90,13 +102,20 @@
             <div class="footer-info row">
                 <nav class="col-3 col-sm-2">
                     <a href="{{route('home')}}">Головна</a>
+<<<<<<< HEAD
                     <a href="{{route('catalog',$count)}}">Каталог</a>
+=======
+                    <a href="{{route('catalog')}}l">Каталог</a>
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
                     <a href="{{route('about')}}">Про нас</a>
                 </nav>
                 <div class="like-cart col-3 col-sm-2">
                     <a href="{{route('favorite')}}">Вподобані</a>
                     <a href="{{route('basket')}}">Корзина</a>
+<<<<<<< HEAD
                     <a href="{{route('certificate')}}">Сертифікати</a>
+=======
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
                 </div>
                 <div class="data col-6 col-sm-4">
                     <a href="mailto:amazin.aroma@gmail.com">amazin.aroma@gmail.com</a>

@@ -2,12 +2,17 @@
 
 namespace App\Http\Controllers;
 
+<<<<<<< HEAD
 use App\Models\Favorite;
 use App\Models\Photo;
 use App\Models\Product;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+=======
+use App\Models\User;
+use Illuminate\Http\Request;
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 
 class HomeController extends Controller
 {
@@ -29,6 +34,7 @@ class HomeController extends Controller
     public function log(){
         return view('auth.login');
     }
+<<<<<<< HEAD
     public function index()
     {
         $user = Auth::user();
@@ -49,4 +55,13 @@ class HomeController extends Controller
 
 
 
+=======
+    public function index($id)
+    {
+        $u=User::find($id);
+        return view('userPage',['user'=>$u]);
+    }
+
+
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 }

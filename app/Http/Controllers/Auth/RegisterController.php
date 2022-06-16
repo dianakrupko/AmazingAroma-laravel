@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+<<<<<<< HEAD
 use App\Http\Controllers\HomeController;
 use App\Models\Order;
 use App\Providers\RouteServiceProvider;
@@ -10,6 +11,11 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Routing\Route;
 use Illuminate\Support\Facades\Auth;
+=======
+use App\Providers\RouteServiceProvider;
+use App\Models\User;
+use Illuminate\Foundation\Auth\RegistersUsers;
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
@@ -34,6 +40,10 @@ class RegisterController extends Controller
      * @var string
      */
     protected $redirectTo = RouteServiceProvider::HOME;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     /**
      * Create a new controller instance.
      *
@@ -67,13 +77,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+<<<<<<< HEAD
         $u=User::create([
+=======
+        return User::create([
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+<<<<<<< HEAD
         $user_id=$u->id;
         $orderId = Order::create()->insert(['user_id' => $user_id]);
         return $u;
+=======
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     }
 }

@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     public function photos(){
         return $this->hasMany('App\Models\Photo');
     }
@@ -15,6 +18,7 @@ class Product extends Model
     public function orders(){
         return $this->belongsToMany('App\Models\Order');
     }
+<<<<<<< HEAD
 
     public function favorites(){
         return $this->belongsToMany(Favorite::class);
@@ -29,4 +33,6 @@ class Product extends Model
         }
     }
 
+=======
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 }

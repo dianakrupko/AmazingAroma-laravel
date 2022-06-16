@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Order extends Model
 {
     public function user(){
+<<<<<<< HEAD
         return $this->belongsTo(User::class);
     }
 
@@ -20,5 +21,12 @@ class Order extends Model
             $sum+=$product->getPriceForCount();
         }
         return $sum;
+=======
+        return $this->belongsTo('App\Models\User');
+    }
+
+    public function products(){
+        return $this->belongsToMany('App\Models\Product');
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     }
 }

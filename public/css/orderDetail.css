@@ -21,11 +21,16 @@ hr {
 }
 h1 {
     font-weight: 600;
+<<<<<<< HEAD
     font-size: 30px;
+=======
+    font-size: 50px;
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     line-height: 68px;
     text-transform: uppercase;
     margin: 0 2vw;
 }
+<<<<<<< HEAD
 
 .products {
     margin: 4vh 0;
@@ -75,6 +80,51 @@ h1 {
 }
 
 
+=======
+.about-us-information {
+    width: 100%;
+    margin: 10% 0;
+}
+.list {
+    list-style-type: none;
+    padding-left: 2.5%;
+    width: 100%;
+    margin:5% 0;
+    border: 1px solid #B9AC92;
+}
+.list li {
+    padding: 2% 0;
+    color: #968F82;
+    font-size: 25px;
+}
+.list span {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+    color: #000000;
+}
+.link-order-detail{
+    font-size: 15px;
+    color: #968f82;
+}
+.list hr {
+    border: none;
+    border-top: 1px solid #968F82;
+    width: 8vw;
+}
+.link-catalog{
+    padding: 2% 0;
+    color: #968f82;
+}
+.link-catalog a{
+    color: #968f82;
+}
+.link-catalog hr{
+    border: none;
+    border-top:1px solid #968f82;
+    width: 8vw;
+}
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
 @media (max-width: 1200px) {
     .back a {
         font-size: 18px;

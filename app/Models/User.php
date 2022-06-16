@@ -45,9 +45,13 @@ class User extends Authenticatable
     /*------------------------------------------*/
 
     public function orders(){
+<<<<<<< HEAD
         return $this->hasMany(Order::class);
     }
     public function favorites(){
         return $this->hasMany('App\Models\Favorite');
+=======
+        return $this->hasMany('App\Models\Order');
+>>>>>>> 5ed371f58955403c168b6f3d4fc9d9c5f71704d5
     }
 }
